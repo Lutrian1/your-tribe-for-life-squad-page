@@ -147,8 +147,8 @@ header {
 
 <script>
     import logo from '$lib/assets/pictures/logo.svg';
-    import leaf1 from '$lib/assets/pictures/leaf1.svg'
-    import leaf2 from '$lib/assets/pictures/leaf2.svg'
+    import leaf1 from '$lib/assets/pictures/leaf1.svg';
+    import leaf2 from '$lib/assets/pictures/leaf2.svg';
 </script>
 
 <!-- <script>
