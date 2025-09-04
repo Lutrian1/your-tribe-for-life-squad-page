@@ -33,16 +33,14 @@ header {
     display: flex;
     flex-direction: column;
 
-    p{
-        font-size: clamp(1.2em, 1.4vw, 1.6em);
-        font-weight: 800;
-        margin: 0;
-        max-width: 290px;
-    }
-
     .headerColumn1 { grid-area: col1; }
     .headerColumn2 { grid-area: col2; }
     .headerColumn3 { grid-area: col3; }
+
+    p{
+        text-align: center;
+        font-weight: 800;
+    }
 }
 
 /*----------------------------------- HEADER: Container query - Telefoon --------------------------------------*/
@@ -56,6 +54,12 @@ header {
         margin-top: 4vh;
         display: flex;
         justify-content: center;
+    }
+
+    p{
+        font-size: clamp(1.3em, 1.3vw, 1.7em);
+        margin: 0;
+        max-width: 380px;
     }
 }
 
@@ -76,6 +80,12 @@ header {
         .headerColumn1, .headerColumn3{
             display: flex;
             justify-content: center;
+        }
+
+        p{
+            font-size: clamp(1.1em, 1.2vw, 1.5em);
+            margin: 0;
+            max-width: 310px;
         }
 
 }
