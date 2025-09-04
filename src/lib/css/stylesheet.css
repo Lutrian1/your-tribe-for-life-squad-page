@@ -38,18 +38,16 @@ body {
 /*----------------------------------- VARIABELEN VOOR ALLE KNOPPEN EN ANDERE ELEMENTEN --------------------------------------*/
 
 h1{
-    font-size: clamp(2.5em, 10vw, 6.5em);;
+    font-size: clamp(2.5em, 10vw, 6.5em);
 }
 
-.logo{
-    max-width: 70%;
-    height: auto;
-}
+/*----------------------------------- BACKGROUND --------------------------------------*/
+
 .background{
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: -1;
 }
 .leaf1{
@@ -79,7 +77,6 @@ h1{
     height: auto;
     width: 29vw;
 }
-
 
 .leaf4{
     position: absolute;
