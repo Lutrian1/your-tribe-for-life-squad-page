@@ -9,7 +9,7 @@
 
         <article class="headerColumn2">
             <a href="/" class="logo">
-                <img src="src/lib/assets/pictures/logo.svg" alt="" class="logoImg" width="505" height="227">
+                <img src="{logo}" alt="" class="logoImg" width="505" height="227">
                 <h1 class="sikjeTitle">Sikje.com</h1>
             </a>
         </article>
@@ -138,6 +138,9 @@ header {
 
 </style>
 
+<script>
+    import logo from '$lib/assets/pictures/logo.svg';
+</script>
 
 <!-- <script>
     let { data } = $props();
