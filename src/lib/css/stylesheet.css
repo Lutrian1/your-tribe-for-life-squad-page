@@ -13,6 +13,7 @@ html, body {
     font-family: var(--main-font);
     background-color: var(--main-background-color);
     color: var(--main-text-color);
+    height: 300vh;
 }
 
 li {
@@ -49,13 +50,13 @@ h1{
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: -1;
 }
 .leaf1{
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10;
     max-width: 235px;
     height: auto;
     width: 30vw;
@@ -64,7 +65,7 @@ h1{
 .leaf2{
     position: absolute;
     top: 0;
-    right: 0;
+    right: -10px;
     max-width: 225px;
     height: auto;
     width: 32vw;
@@ -73,21 +74,86 @@ h1{
 .leaf3{
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -12px;
     transform: rotate(-40deg);
     max-width: 205px;
     height: auto;
     width: 29vw;
 }
 
-
 .leaf4{
     position: absolute;
     bottom: 0;
-    right: 0;
-    transform: rotate(20deg);
+    right: -20px;
+    transform: rotate(-20deg);
     max-width: 191px;
     height: auto;
     width: 27vw;
+}
+
+/*----------------------------------- ANIMATIE BLADEREN --------------------------------------*/
+
+@media (prefers-reduced-motion: no-preference) {
+
+    @property --scroll-position {
+        syntax: "<number>";
+        inherits: true;
+        initial-value: 0;
+    }
+    @property --scroll-position-delayed {
+        syntax: "<number>";
+        inherits: true;
+        initial-value: 0;
+    }
+
+    @keyframes adjustPos {
+        to {
+            --scroll-position: 1;
+            --scroll-position-delayed: 1;
+        }
+    }
+
+    :root {
+        animation: adjustPos linear both;
+        animation-timeline: scroll(root);
+    }
+
+    body {
+        transition: --scroll-position-delayed 0.15s linear;
+        --scroll-velocity: calc(var(--scroll-position) - var(--scroll-position-delayed));
+        --scroll-speed: abs(var(--scroll-velocity));
+        --scroll-direction: sign(var(--scroll-velocity));
+    }
+
+    body {
+        font-size: 2rem;
+    }
+
+    .leaf1{
+        transform: rotate(calc(var(--scroll-velocity) * -20deg)) skew(calc(var(--scroll-velocity) * -10deg));
+    }
+
+    
+    .leaf2{
+        transform: rotate(calc(var(--scroll-velocity) * 20deg)) skew(calc(var(--scroll-velocity) * 10deg));
+    }
+
+
+    .leaf3{
+        transform: rotate(calc(var(--scroll-velocity) * -80deg)) skew(calc(var(--scroll-velocity) * -50deg));
+    }
+
+    .leaf4{
+        transform: rotate(calc(var(--scroll-velocity) * 60deg)) skew(calc(var(--scroll-velocity) * 50deg));
+    }
+
+
+
+    @supports not (transform: scaleX(sign(-1))) {
+        body {
+            --scroll-speed: max(var(--scroll-velocity), -1 * var(--scroll-velocity));
+            --scroll-direction: calc(var(--scroll-velocity) / var(--scroll-speed));
+        }
+    }
 }
 
