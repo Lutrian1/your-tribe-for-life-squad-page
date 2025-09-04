@@ -1,3 +1,10 @@
+<div class="background">
+	<img src="{leaf2}" alt="" class="leaf1">
+	<img src="{leaf1}" alt="" class="leaf2">
+	<img src="{leaf2}" alt="" class="leaf3">
+	<img src="{leaf1}" alt="" class="leaf4">
+</div>
+
 <header>
 
     <div class="headerContainer">
@@ -140,6 +147,8 @@ header {
 
 <script>
     import logo from '$lib/assets/pictures/logo.svg';
+    import leaf1 from '$lib/assets/pictures/leaf1.svg'
+    import leaf2 from '$lib/assets/pictures/leaf2.svg'
 </script>
 
 <!-- <script>
