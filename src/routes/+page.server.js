@@ -1,3 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export async function load({ url }) {
   //hier komt het fetchen van data check oude server.js met alles
   const membersResponse = await fetch(
