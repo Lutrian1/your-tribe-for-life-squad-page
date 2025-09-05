@@ -1,3 +1,9 @@
+<div class="background">
+	<img src="{leaf2}" alt="" class="leaf1">
+	<img src="{leaf1}" alt="" class="leaf2">
+	<img src="{leaf2}" alt="" class="leaf3">
+	<img src="{leaf1}" alt="" class="leaf4">
+</div>
 
 
 
