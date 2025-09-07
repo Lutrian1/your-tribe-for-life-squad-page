@@ -30,7 +30,7 @@
 
 </header>
 
-<OnsTeam titel="Ons team" members={data.members} />
+<OnsTeam titel="ONS TEAM" members={data.members} />
 
 <style>
 
@@ -49,6 +49,8 @@ header {
     p{
         text-align: center;
         font-weight: 800;
+        width: auto;
+        height: auto;
     }
 }
 
@@ -79,7 +81,6 @@ header {
         display: grid; 
         grid-auto-columns: 1fr; 
         grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
             "col2 col2"
