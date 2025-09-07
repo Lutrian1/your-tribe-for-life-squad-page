@@ -13,15 +13,6 @@ html, body {
     font-family: var(--main-font);
     background-color: var(--main-background-color);
     color: var(--main-text-color);
-    height: 300vh;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 body {
