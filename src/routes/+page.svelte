@@ -26,4 +26,3 @@
 
 <!-- COMPONENT: FOOTER-->
 <Footer />
-s
