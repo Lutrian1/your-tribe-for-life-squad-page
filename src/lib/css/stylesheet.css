@@ -196,7 +196,7 @@ h1{
   navigation: auto;
 }
 
-@keyframes organic-erase-out {
+@keyframes eraseOut {
   0% {
     clip-path: inset(0 0 0 0);
   }
@@ -214,7 +214,7 @@ h1{
   }
 }
 
-@keyframes organic-erase-in {
+@keyframes eraseIn {
   0% {
     clip-path: inset(100% 100% 100% 100%);
   }
@@ -233,9 +233,9 @@ h1{
 }
 
 ::view-transition-old(root) {
-  animation: 1.5s ease-in-out both organic-erase-out;
+  animation: 1.5s ease-in-out both eraseOut;
 }
 
 ::view-transition-new(root) {
-  animation: 1.5s ease-in-out both organic-erase-in;
+  animation: 1.5s ease-in-out both eraseIn;
 }
