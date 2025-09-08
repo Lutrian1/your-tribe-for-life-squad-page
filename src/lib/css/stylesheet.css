@@ -105,7 +105,7 @@ h1{
         initial-value: 0;
     }
 
-    @keyframes adjustPos {
+    @keyframes animation_adjustPos {
         to {
             --scroll-position: 1;
             --scroll-position-delayed: 1;
@@ -113,7 +113,7 @@ h1{
     }
 
     :root {
-        animation: adjustPos linear both;
+        animation: animation_adjustPos linear both;
         animation-timeline: scroll(root);
     }
 
@@ -196,46 +196,161 @@ h1{
   navigation: auto;
 }
 
-@keyframes eraseOut {
+@keyframes animation_eraseOut {
   0% {
-    clip-path: inset(0 0 0 0);
+    clip-path: shape(from 0% 53.78%, line to 100% 0%, line to 24.41% 100%);
+  }
+  4.1667% {
+    clip-path: shape(from 0% 53.78%, line to 69.04% 0%, line to 16.85% 100%, line to 100% 10.97%);
+  }
+  8.3333% {
+    clip-path: shape(from 0% 43.31%, line to 69.04% 0%, line to 16.85% 80.53%, line to 100% 8.83%, line to 59.51% 100%);
+  }
+  12.5% {
+    clip-path: shape(from 0% 43.31%, line to 54.44% 0%, line to 13.29% 80.53%, line to 78.84% 8.83%, line to 46.92% 100%, line to 100% 15.01%);
+  }
+  16.6667% {
+    clip-path: shape(from 0% 40.46%, line to 54.44% 0%, line to 13.29% 75.24%, line to 78.84% 8.25%, line to 46.92% 93.43%, line to 100% 14.02%, line to 62.6% 100%);
+  }
+  20.8333% {
+    clip-path: shape(from 0% 40.46%, line to 37.52% 0%, line to 9.16% 75.24%, line to 54.35% 8.25%, line to 32.34% 93.43%, line to 68.93% 14.02%, line to 43.15% 100%, line to 100% 0%);
   }
   25% {
-    clip-path: inset(0 20% 10% 0);
+    clip-path: shape(from 0% 34.71%, line to 37.52% 0%, line to 9.16% 64.54%, line to 54.35% 7.08%, line to 32.34% 80.14%, line to 68.93% 12.03%, line to 43.15% 85.77%, line to 100% 0%, line to 54.35% 100%);
+  }
+  29.1667% {
+    clip-path: shape(from 0% 34.71%, line to 34.59% 0%, line to 8.44% 64.54%, line to 50.1% 7.08%, line to 29.81% 80.14%, line to 63.54% 12.03%, line to 39.78% 85.77%, line to 92.18% 0%, line to 50.1% 100%, line to 100% 17.73%);
+  }
+  33.3333% {
+    clip-path: shape(from 0% 31.98%, line to 34.59% 0%, line to 8.44% 59.47%, line to 50.1% 6.52%, line to 29.81% 73.84%, line to 63.54% 11.08%, line to 39.78% 79.04%, line to 92.18% 0%, line to 50.1% 92.15%, line to 100% 16.34%, line to 69.5% 100%);
+  }
+  37.5% {
+    clip-path: shape(from 0% 31.98%, line to 30.82% 0%, line to 7.52% 59.47%, line to 44.64% 6.52%, line to 26.56% 73.84%, line to 56.61% 11.08%, line to 35.44% 79.04%, line to 82.13% 0%, line to 44.64% 92.15%, line to 89.1% 16.34%, line to 61.93% 100%, line to 100% 31.98%);
+  }
+  41.6667% {
+    clip-path: shape(from 0% 30.77%, line to 30.82% 0%, line to 7.52% 57.22%, line to 44.64% 6.28%, line to 26.56% 71.05%, line to 56.61% 10.66%, line to 35.44% 76.05%, line to 82.13% 0%, line to 44.64% 88.67%, line to 89.1% 15.72%, line to 61.93% 96.22%, line to 100% 30.77%, line to 89.1% 100%);
+  }
+  45.8333% {
+    clip-path: shape(from 0% 30.77%, line to 26.88% 0%, line to 6.56% 57.22%, line to 38.94% 6.28%, line to 23.17% 71.05%, line to 49.38% 10.66%, line to 30.91% 76.05%, line to 71.64% 0%, line to 38.94% 88.67%, line to 77.72% 15.72%, line to 54.02% 96.22%, line to 87.23% 30.77%, line to 77.72% 100%, line to 100% 20.11%);
   }
   50% {
-    clip-path: inset(10% 30% 30% 10%);
+    clip-path: shape(from 0% 30.77%, line to 26.88% 0%, line to 6.56% 57.22%, line to 38.94% 6.28%, line to 23.17% 71.05%, line to 49.38% 10.66%, line to 30.91% 76.05%, line to 71.64% 0%, line to 38.94% 88.67%, line to 77.72% 15.72%, line to 54.02% 96.22%, line to 87.23% 30.77%, line to 77.72% 100%, line to 100% 20.11%, line to 90.54% 100%);
+  }
+  54.1667% {
+    clip-path: shape(from 0% 30.77%, line to 23.83% 0%, line to 5.82% 57.22%, line to 34.51% 6.28%, line to 20.54% 71.05%, line to 43.77% 10.66%, line to 27.4% 76.05%, line to 63.51% 0%, line to 34.51% 88.67%, line to 68.89% 15.72%, line to 47.88% 96.22%, line to 77.32% 30.77%, line to 68.89% 100%, line to 88.64% 20.11%, line to 80.25% 100%, line to 100% 15.72%);
+  }
+  58.3333% {
+    clip-path: shape(from 0% 30.77%, line to 23.83% 0%, line to 5.82% 57.22%, line to 34.51% 6.28%, line to 20.54% 71.05%, line to 43.77% 10.66%, line to 27.4% 76.05%, line to 63.51% 0%, line to 34.51% 88.67%, line to 68.89% 15.72%, line to 47.88% 96.22%, line to 77.32% 30.77%, line to 68.89% 100%, line to 88.64% 20.11%, line to 80.25% 100%, line to 100% 15.72%, vline to 100%);
+  }
+  62.5% {
+    clip-path: shape(from 0% 30.77%, line to 21.64% 0%, line to 5.28% 57.22%, line to 31.35% 6.28%, line to 18.66% 71.05%, line to 39.76% 10.66%, line to 24.89% 76.05%, line to 57.68% 0%, line to 31.35% 88.67%, line to 62.57% 15.72%, line to 43.49% 96.22%, line to 70.23% 30.77%, line to 62.57% 100%, line to 80.51% 20.11%, line to 72.89% 100%, line to 90.83% 15.72%, vline to 100%, line to 100% 20.11%);
+  }
+  66.6667% {
+    clip-path: shape(from 0% 30.77%, line to 21.64% 0%, line to 5.28% 57.22%, line to 31.35% 6.28%, line to 18.66% 71.05%, line to 39.76% 10.66%, line to 24.89% 76.05%, line to 57.68% 0%, line to 31.35% 88.67%, line to 62.57% 15.72%, line to 43.49% 96.22%, line to 70.23% 30.77%, line to 62.57% 100%, line to 80.51% 20.11%, line to 72.89% 100%, line to 90.83% 15.72%, vline to 100%, line to 100% 20.11%, vline to 96.22%);
+  }
+  70.8333% {
+    clip-path: shape(from 0% 30.77%, line to 21.64% 0%, line to 5.28% 57.22%, line to 31.35% 6.28%, line to 18.66% 71.05%, line to 39.76% 10.66%, line to 24.89% 76.05%, line to 57.68% 0%, line to 31.35% 88.67%, line to 62.57% 15.72%, line to 43.49% 96.22%, line to 70.23% 30.77%, line to 62.57% 100%, line to 80.51% 20.11%, line to 72.89% 100%, line to 90.83% 15.72%, vline to 100%, line to 100% 20.11%, vline to 96.22%, line to 95.99% 20.11%, line to 100% 96.22%);
   }
   75% {
-    clip-path: inset(40% 60% 60% 40%);
+    clip-path: shape(from 0% 30.77%, line to 18.9% 0%, line to 4.61% 57.22%, line to 27.38% 6.28%, line to 16.29% 71.05%, line to 34.72% 10.66%, line to 21.74% 76.05%, line to 50.38% 0%, line to 27.38% 88.67%, line to 54.65% 15.72%, line to 37.98% 96.22%, line to 61.34% 30.77%, line to 54.65% 100%, line to 70.32% 20.11%, line to 63.66% 100%, line to 79.33% 15.72%, vline to 100%, line to 87.34% 20.11%, vline to 96.22%, line to 95.99% 20.11%, line to 100% 96.22%);
+  }
+  79.1667% {
+    clip-path: shape(from 0% 30.77%, line to 17.4% 0%, line to 4.25% 57.22%, line to 25.2% 6.28%, line to 15% 71.05%, line to 31.96% 10.66%, line to 20.01% 76.05%, line to 46.36% 0%, line to 25.2% 88.67%, line to 50.3% 15.72%, line to 34.96% 96.22%, line to 56.45% 30.77%, line to 50.3% 100%, line to 64.71% 20.11%, line to 58.59% 100%, line to 73.01% 15.72%, vline to 100%, line to 80.38% 20.11%, vline to 96.22%, line to 88.35% 20.11%, line to 92.03% 96.22%, line to 100% 20.11%);
+  }
+  83.3333% {
+    clip-path: shape(from 0% 30.77%, line to 16.78% 0%, line to 4.1% 57.22%, line to 24.3% 6.28%, line to 14.46% 71.05%, line to 30.82% 10.66%, line to 19.29% 76.05%, line to 44.72% 0%, line to 24.3% 88.67%, line to 48.51% 15.72%, line to 33.72% 96.22%, line to 54.44% 30.77%, line to 48.51% 100%, line to 62.41% 20.11%, line to 56.51% 100%, line to 70.41% 15.72%, vline to 100%, line to 77.52% 20.11%, vline to 96.22%, line to 85.21% 20.11%, line to 88.76% 96.22%, line to 96.44% 20.11%, line to 100% 93.05%);
+  }
+  87.5% {
+    clip-path: shape(from 0% 30.77%, line to 15.24% 0%, line to 3.72% 57.22%, line to 22.08% 6.28%, line to 13.14% 71.05%, line to 28% 10.66%, line to 17.53% 76.05%, line to 40.63% 0%, line to 22.08% 88.67%, line to 44.07% 15.72%, line to 30.63% 96.22%, line to 49.47% 30.77%, line to 44.07% 100%, line to 56.71% 20.11%, line to 51.34% 100%, line to 63.97% 15.72%, vline to 100%, line to 70.44% 20.11%, vline to 96.22%, line to 77.42% 20.11%, line to 80.65% 96.22%, line to 87.63% 20.11%, line to 90.86% 93.05%, line to 100% 15.72%);
+  }
+  91.6667% {
+    clip-path: shape(from 0% 30.77%, line to 13.76% 0%, line to 3.36% 57.22%, line to 19.93% 6.28%, line to 11.86% 71.05%, line to 25.28% 10.66%, line to 15.83% 76.05%, line to 36.68% 0%, line to 19.93% 88.67%, line to 39.79% 15.72%, line to 27.66% 96.22%, line to 44.66% 30.77%, line to 39.79% 100%, line to 51.2% 20.11%, line to 46.35% 100%, line to 57.76% 15.72%, vline to 100%, line to 63.59% 20.11%, vline to 96.22%, line to 69.9% 20.11%, line to 72.81% 96.22%, line to 79.12% 20.11%, line to 82.03% 93.05%, line to 90.29% 15.72%, line to 100% 96.22%);
   }
   100% {
-    clip-path: inset(100% 100% 100% 100%);
+    clip-path: shape(from 0% 30.77%, line to 13.76% 0%, line to 3.36% 57.22%, line to 19.93% 6.28%, line to 11.86% 71.05%, line to 25.28% 10.66%, line to 15.83% 76.05%, line to 36.68% 0%, line to 19.93% 88.67%, line to 39.79% 15.72%, line to 27.66% 96.22%, line to 44.66% 30.77%, line to 39.79% 100%, line to 51.2% 20.11%, line to 46.35% 100%, line to 57.76% 15.72%, vline to 100%, line to 63.59% 20.11%, vline to 96.22%, line to 69.9% 20.11%, line to 72.81% 96.22%, line to 79.12% 20.11%, line to 82.03% 93.05%, line to 90.29% 15.72%, line to 100% 96.22%);
   }
 }
 
-@keyframes eraseIn {
+
+@keyframes animation_eraseIn {
   0% {
-    clip-path: inset(100% 100% 100% 100%);
+    clip-path: shape(from 0% 53.78%, line to 100% 0%, line to 24.41% 100%);
+  }
+  4.1667% {
+    clip-path: shape(from 0% 53.78%, line to 69.04% 0%, line to 16.85% 100%, line to 100% 10.97%);
+  }
+  8.3333% {
+    clip-path: shape(from 0% 43.31%, line to 69.04% 0%, line to 16.85% 80.53%, line to 100% 8.83%, line to 59.51% 100%);
+  }
+  12.5% {
+    clip-path: shape(from 0% 43.31%, line to 54.44% 0%, line to 13.29% 80.53%, line to 78.84% 8.83%, line to 46.92% 100%, line to 100% 15.01%);
+  }
+  16.6667% {
+    clip-path: shape(from 0% 40.46%, line to 54.44% 0%, line to 13.29% 75.24%, line to 78.84% 8.25%, line to 46.92% 93.43%, line to 100% 14.02%, line to 62.6% 100%);
+  }
+  20.8333% {
+    clip-path: shape(from 0% 40.46%, line to 37.52% 0%, line to 9.16% 75.24%, line to 54.35% 8.25%, line to 32.34% 93.43%, line to 68.93% 14.02%, line to 43.15% 100%, line to 100% 0%);
   }
   25% {
-    clip-path: inset(60% 60% 40% 40%);
+    clip-path: shape(from 0% 34.71%, line to 37.52% 0%, line to 9.16% 64.54%, line to 54.35% 7.08%, line to 32.34% 80.14%, line to 68.93% 12.03%, line to 43.15% 85.77%, line to 100% 0%, line to 54.35% 100%);
+  }
+  29.1667% {
+    clip-path: shape(from 0% 34.71%, line to 34.59% 0%, line to 8.44% 64.54%, line to 50.1% 7.08%, line to 29.81% 80.14%, line to 63.54% 12.03%, line to 39.78% 85.77%, line to 92.18% 0%, line to 50.1% 100%, line to 100% 17.73%);
+  }
+  33.3333% {
+    clip-path: shape(from 0% 31.98%, line to 34.59% 0%, line to 8.44% 59.47%, line to 50.1% 6.52%, line to 29.81% 73.84%, line to 63.54% 11.08%, line to 39.78% 79.04%, line to 92.18% 0%, line to 50.1% 92.15%, line to 100% 16.34%, line to 69.5% 100%);
+  }
+  37.5% {
+    clip-path: shape(from 0% 31.98%, line to 30.82% 0%, line to 7.52% 59.47%, line to 44.64% 6.52%, line to 26.56% 73.84%, line to 56.61% 11.08%, line to 35.44% 79.04%, line to 82.13% 0%, line to 44.64% 92.15%, line to 89.1% 16.34%, line to 61.93% 100%, line to 100% 31.98%);
+  }
+  41.6667% {
+    clip-path: shape(from 0% 30.77%, line to 30.82% 0%, line to 7.52% 57.22%, line to 44.64% 6.28%, line to 26.56% 71.05%, line to 56.61% 10.66%, line to 35.44% 76.05%, line to 82.13% 0%, line to 44.64% 88.67%, line to 89.1% 15.72%, line to 61.93% 96.22%, line to 100% 30.77%, line to 89.1% 100%);
+  }
+  45.8333% {
+    clip-path: shape(from 0% 30.77%, line to 26.88% 0%, line to 6.56% 57.22%, line to 38.94% 6.28%, line to 23.17% 71.05%, line to 49.38% 10.66%, line to 30.91% 76.05%, line to 71.64% 0%, line to 38.94% 88.67%, line to 77.72% 15.72%, line to 54.02% 96.22%, line to 87.23% 30.77%, line to 77.72% 100%, line to 100% 20.11%);
   }
   50% {
-    clip-path: inset(30% 30% 10% 10%);
+    clip-path: shape(from 0% 30.77%, line to 26.88% 0%, line to 6.56% 57.22%, line to 38.94% 6.28%, line to 23.17% 71.05%, line to 49.38% 10.66%, line to 30.91% 76.05%, line to 71.64% 0%, line to 38.94% 88.67%, line to 77.72% 15.72%, line to 54.02% 96.22%, line to 87.23% 30.77%, line to 77.72% 100%, line to 100% 20.11%, line to 90.54% 100%);
+  }
+  54.1667% {
+    clip-path: shape(from 0% 30.77%, line to 23.83% 0%, line to 5.82% 57.22%, line to 34.51% 6.28%, line to 20.54% 71.05%, line to 43.77% 10.66%, line to 27.4% 76.05%, line to 63.51% 0%, line to 34.51% 88.67%, line to 68.89% 15.72%, line to 47.88% 96.22%, line to 77.32% 30.77%, line to 68.89% 100%, line to 88.64% 20.11%, line to 80.25% 100%, line to 100% 15.72%);
+  }
+  58.3333% {
+    clip-path: shape(from 0% 30.77%, line to 23.83% 0%, line to 5.82% 57.22%, line to 34.51% 6.28%, line to 20.54% 71.05%, line to 43.77% 10.66%, line to 27.4% 76.05%, line to 63.51% 0%, line to 34.51% 88.67%, line to 68.89% 15.72%, line to 47.88% 96.22%, line to 77.32% 30.77%, line to 68.89% 100%, line to 88.64% 20.11%, line to 80.25% 100%, line to 100% 15.72%, vline to 100%);
+  }
+  62.5% {
+    clip-path: shape(from 0% 30.77%, line to 21.64% 0%, line to 5.28% 57.22%, line to 31.35% 6.28%, line to 18.66% 71.05%, line to 39.76% 10.66%, line to 24.89% 76.05%, line to 57.68% 0%, line to 31.35% 88.67%, line to 62.57% 15.72%, line to 43.49% 96.22%, line to 70.23% 30.77%, line to 62.57% 100%, line to 80.51% 20.11%, line to 72.89% 100%, line to 90.83% 15.72%, vline to 100%, line to 100% 20.11%);
+  }
+  66.6667% {
+    clip-path: shape(from 0% 30.77%, line to 21.64% 0%, line to 5.28% 57.22%, line to 31.35% 6.28%, line to 18.66% 71.05%, line to 39.76% 10.66%, line to 24.89% 76.05%, line to 57.68% 0%, line to 31.35% 88.67%, line to 62.57% 15.72%, line to 43.49% 96.22%, line to 70.23% 30.77%, line to 62.57% 100%, line to 80.51% 20.11%, line to 72.89% 100%, line to 90.83% 15.72%, vline to 100%, line to 100% 20.11%, vline to 96.22%);
+  }
+  70.8333% {
+    clip-path: shape(from 0% 30.77%, line to 21.64% 0%, line to 5.28% 57.22%, line to 31.35% 6.28%, line to 18.66% 71.05%, line to 39.76% 10.66%, line to 24.89% 76.05%, line to 57.68% 0%, line to 31.35% 88.67%, line to 62.57% 15.72%, line to 43.49% 96.22%, line to 70.23% 30.77%, line to 62.57% 100%, line to 80.51% 20.11%, line to 72.89% 100%, line to 90.83% 15.72%, vline to 100%, line to 100% 20.11%, vline to 96.22%, line to 95.99% 20.11%, line to 100% 96.22%);
   }
   75% {
-    clip-path: inset(10% 20% 0% 0%);
+    clip-path: shape(from 0% 30.77%, line to 18.9% 0%, line to 4.61% 57.22%, line to 27.38% 6.28%, line to 16.29% 71.05%, line to 34.72% 10.66%, line to 21.74% 76.05%, line to 50.38% 0%, line to 27.38% 88.67%, line to 54.65% 15.72%, line to 37.98% 96.22%, line to 61.34% 30.77%, line to 54.65% 100%, line to 70.32% 20.11%, line to 63.66% 100%, line to 79.33% 15.72%, vline to 100%, line to 87.34% 20.11%, vline to 96.22%, line to 95.99% 20.11%, line to 100% 96.22%);
+  }
+  79.1667% {
+    clip-path: shape(from 0% 30.77%, line to 17.4% 0%, line to 4.25% 57.22%, line to 25.2% 6.28%, line to 15% 71.05%, line to 31.96% 10.66%, line to 20.01% 76.05%, line to 46.36% 0%, line to 25.2% 88.67%, line to 50.3% 15.72%, line to 34.96% 96.22%, line to 56.45% 30.77%, line to 50.3% 100%, line to 64.71% 20.11%, line to 58.59% 100%, line to 73.01% 15.72%, vline to 100%, line to 80.38% 20.11%, vline to 96.22%, line to 88.35% 20.11%, line to 92.03% 96.22%, line to 100% 20.11%);
+  }
+  83.3333% {
+    clip-path: shape(from 0% 30.77%, line to 16.78% 0%, line to 4.1% 57.22%, line to 24.3% 6.28%, line to 14.46% 71.05%, line to 30.82% 10.66%, line to 19.29% 76.05%, line to 44.72% 0%, line to 24.3% 88.67%, line to 48.51% 15.72%, line to 33.72% 96.22%, line to 54.44% 30.77%, line to 48.51% 100%, line to 62.41% 20.11%, line to 56.51% 100%, line to 70.41% 15.72%, vline to 100%, line to 77.52% 20.11%, vline to 96.22%, line to 85.21% 20.11%, line to 88.76% 96.22%, line to 96.44% 20.11%, line to 100% 93.05%);
+  }
+  87.5% {
+    clip-path: shape(from 0% 30.77%, line to 15.24% 0%, line to 3.72% 57.22%, line to 22.08% 6.28%, line to 13.14% 71.05%, line to 28% 10.66%, line to 17.53% 76.05%, line to 40.63% 0%, line to 22.08% 88.67%, line to 44.07% 15.72%, line to 30.63% 96.22%, line to 49.47% 30.77%, line to 44.07% 100%, line to 56.71% 20.11%, line to 51.34% 100%, line to 63.97% 15.72%, vline to 100%, line to 70.44% 20.11%, vline to 96.22%, line to 77.42% 20.11%, line to 80.65% 96.22%, line to 87.63% 20.11%, line to 90.86% 93.05%, line to 100% 15.72%);
+  }
+  91.6667% {
+    clip-path: shape(from 0% 30.77%, line to 13.76% 0%, line to 3.36% 57.22%, line to 19.93% 6.28%, line to 11.86% 71.05%, line to 25.28% 10.66%, line to 15.83% 76.05%, line to 36.68% 0%, line to 19.93% 88.67%, line to 39.79% 15.72%, line to 27.66% 96.22%, line to 44.66% 30.77%, line to 39.79% 100%, line to 51.2% 20.11%, line to 46.35% 100%, line to 57.76% 15.72%, vline to 100%, line to 63.59% 20.11%, vline to 96.22%, line to 69.9% 20.11%, line to 72.81% 96.22%, line to 79.12% 20.11%, line to 82.03% 93.05%, line to 90.29% 15.72%, line to 100% 96.22%);
   }
   100% {
-    clip-path: inset(0 0 0 0);
+    clip-path: shape(from 0% 30.77%, line to 13.76% 0%, line to 3.36% 57.22%, line to 19.93% 6.28%, line to 11.86% 71.05%, line to 25.28% 10.66%, line to 15.83% 76.05%, line to 36.68% 0%, line to 19.93% 88.67%, line to 39.79% 15.72%, line to 27.66% 96.22%, line to 44.66% 30.77%, line to 39.79% 100%, line to 51.2% 20.11%, line to 46.35% 100%, line to 57.76% 15.72%, vline to 100%, line to 63.59% 20.11%, vline to 96.22%, line to 69.9% 20.11%, line to 72.81% 96.22%, line to 79.12% 20.11%, line to 82.03% 93.05%, line to 90.29% 15.72%, line to 100% 96.22%);
   }
 }
 
 ::view-transition-old(root) {
-  animation: 1.5s ease-in-out both eraseOut;
+  animation: 1s ease-in-out both animation_eraseOut;
 }
 
 ::view-transition-new(root) {
-  animation: 1.5s ease-in-out both eraseIn;
+  animation: 1s ease-in-out both animation_eraseIn;
 }
