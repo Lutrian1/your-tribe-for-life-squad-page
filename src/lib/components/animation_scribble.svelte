@@ -22,25 +22,25 @@
 {/if}
 
 <style>
-  .scribbleIn {
-    stroke: var(--main-background-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 150vw;
-    height: 100vh;
-    overflow: clip;
-    z-index: 100;
-    pointer-events: none;
-    stroke-dasharray: 0;
-    stroke-dashoffset: 0;
-    animation: animation_scribbleIn 2s linear forwards;
+.scribbleIn {
+  stroke: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150vw;
+  height: 100vh;
+  overflow: clip;
+  z-index: 100;
+  pointer-events: none;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  animation: animation_scribbleIn 2s linear forwards;
   }
   
   @keyframes animation_scribbleIn {
     to {
-      stroke-dashoffset: 40000;
-      stroke-dasharray: 40000;
+      stroke-dashoffset: 22306.443359375;
+      stroke-dasharray: 22306.443359375; /*Dit is het einde pad: https://codepen.io/Lutrian1/pen/xbweZRa?editors=1111 check me codepen hoe ik dit heb berekend*/
     }
   }
 </style>
