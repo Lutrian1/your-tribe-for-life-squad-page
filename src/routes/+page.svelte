@@ -1,3 +1,16 @@
+<script>
+
+    import leaf1 from '$lib/assets/pictures/leaf1.svg';
+    import leaf2 from '$lib/assets/pictures/leaf2.svg';
+
+    export let data
+
+    import Header from "$lib/components/header.svelte";
+    import Footer from "$lib/components/footer.svelte";
+    import OnsTeam from "$lib/components/ons-team.svelte";
+
+</script>
+
 <div class="background">
 	<img src="{leaf2}" alt="" class="leaf1">
 	<img src="{leaf1}" alt="" class="leaf2">
@@ -5,31 +18,10 @@
 	<img src="{leaf1}" alt="" class="leaf4">
 </div>
 
-<header>
-
-    <div class="headerContainer">
-        <article class="headerColumn1">
-            <p>Wat is FDND? Bij de Ad Frontend Design & Development (FDND) doe je alles met code, en designen.
-            De opleiding duurt 2 jaar waarin je van alles leert om je zo'n goed mogelijke front-ender te maken
-            en je voor te bereiden voor het werkt veld.</p>
-        </article>
-
-        <article class="headerColumn2">
-            <a href="/" class="logo">
-                <img src="{logo}" alt="" class="logoImg" width="505" height="227">
-                <h1 class="sikjeTitle">Sikje.com</h1>
-            </a>
-        </article>
-
-        <article class="headerColumn3">
-            <p>Het 2e Jaar is weer begonnen! En ook voor dit jaar moeten wij weer een squadpage in elkaar timmeren.
-            Dit keer met Sveltekit. Een nieuw framework waar wij deze sprint mee werken. De site is hier ook mee gemaakt,
-            en de data is dynamisch gerendered. </p>
-        </article>
-    </div>
-
-</header>
-
+<!-- COMPONENT: HEADER--> 
+<Header />
+ 
+<!-- COMPONENT: ONS TEAM (MAIN)-->
 <OnsTeam titel="ONS TEAM" members={data.members} />
 
 <Animation_scribble />
@@ -161,4 +153,7 @@ header {
     import Animation_scribble from "$lib/components/animation_scribble.svelte";
 </script>
 
+
+<!-- COMPONENT: FOOTER-->
+<Footer />
 

@@ -90,7 +90,7 @@ main{
   }
 
   .title {
-    font-size: clamp(2.5em, 10vw, 6.5em);
+    font-size: clamp(50px, 10vw, 90px);
     width: 100%;
     text-align: center;
     font-weight: 800;
@@ -171,8 +171,8 @@ main{
 
   .ourTeamCard::scroll-marker {
     content: "";
-    height: 2em;
-    width: 2em;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     border: 1px solid #c91833;
   }
@@ -188,12 +188,20 @@ main{
     }
   }
   .memberInfo h3 {
-    font-size: 1.5em;
+    font-size: 32px;
     text-align: end;
+    margin: 0;
+    @media (min-width: 1100px){
+      margin: 20px;
+    }
   }
    .memberInfo p {
-    font-size: 2em;
+    font-size: 24px;
+    margin: 0;
     text-align: start;
+    @media (min-width: 1100px){
+      margin: 20px;
+    }
   }
 
   @media (min-width: 768px) {
@@ -213,10 +221,10 @@ main{
       text-align: end;
     }
     .memberInfo h3 {
-      font-size: 2em;
+      font-size: 32px;
     }
     .memberInfo p {
-      font-size: 1.3em;
+      font-size: 20px;
       text-align: left;
     }
   }

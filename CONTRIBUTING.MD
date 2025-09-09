@@ -31,3 +31,6 @@ Screen:
 
 
 Echter kan je beter de FDND Code conventies [hier](https://github.com/fdnd-agency/.github/wiki/Code-conventions) bekijken, dit is ook wat wij volgen.
+
+## Animatie Conventies
+- Op elke animatie komt 'animation_(animatieNaam)', dus een voorbeeld:  "animation_eraseOut"
