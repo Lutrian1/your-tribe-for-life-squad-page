@@ -31,7 +31,9 @@
 </header>
 
 <OnsTeam titel="ONS TEAM" members={data.members} />
-	<a href="groep-2E">TESST</a>
+
+<Animation_scribble />
+
 <style>
 
 /*----------------------------------- HEADER: Positie --------------------------------------*/
@@ -155,6 +157,8 @@ header {
 
     export let data;
     import OnsTeam from "$lib/components/ons-team.svelte";
+
+    import Animation_scribble from "$lib/components/animation_scribble.svelte";
 </script>
 
 
