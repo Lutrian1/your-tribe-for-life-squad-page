@@ -23,6 +23,26 @@
 
 <style>
 
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-new(root) {
+    animation-name: animation_fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+@keyframes animation_fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference){
   .scribbleIn {
     display: none;
@@ -52,6 +72,6 @@
         stroke-dashoffset: 22306.443359375;
         stroke-dasharray: 22306.443359375; /*Dit is het einde pad: https://codepen.io/Lutrian1/pen/xbweZRa?editors=1111 check me codepen hoe ik dit heb berekend*/
       }
-  }
+    }
 }
 </style>
