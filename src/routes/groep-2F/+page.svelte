@@ -4,6 +4,7 @@
     const members = data.members;
 
     import ClassCarousel from '$lib/components/classCarousel.svelte';
+    import Animation_scribble from "$lib/components/animation_scribble.svelte";
 
 </script>
 
@@ -15,6 +16,8 @@
         {/each}
     </div>
 </section>
+
+<Animation_scribble />
 
 
 <style>

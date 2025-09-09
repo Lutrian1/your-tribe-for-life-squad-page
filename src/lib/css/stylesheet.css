@@ -96,7 +96,7 @@ h1{
         initial-value: 0;
     }
 
-    @keyframes adjustPos {
+    @keyframes animation_adjustPos {
         to {
             --scroll-position: 1;
             --scroll-position-delayed: 1;
@@ -104,7 +104,7 @@ h1{
     }
 
     :root {
-        animation: adjustPos linear both;
+        animation: animation_adjustPos linear both;
         animation-timeline: scroll(root);
     }
 
@@ -147,3 +147,8 @@ h1{
     }
 }
 
+/*----------------------------------- ANIMATIE VIEW TRANSITION (KRAS ANIMATIE)--------------------------------------*/
+
+@view-transition {
+  navigation: auto;
+}

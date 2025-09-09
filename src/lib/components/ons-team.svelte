@@ -16,7 +16,7 @@
     >
       <!-- For each met een loop index -->
       {#each members as member, i}
-        <li class="ourTeamCard carousel__slide" data-label="Slide {i + 1}">
+        <li class="ourTeamCard carousel__slide" data-label="Slide {i + 1} animation_eraseOut" >
           <img src="{scribble}" alt="" class="scribble2">
           <a href={member.website}>
             <picture>
