@@ -1,4 +1,5 @@
 <script>
+    import Animation_Scribble from '$lib/components/animation_scribble.svelte';
 
     import leaf1 from '$lib/assets/pictures/leaf1.svg';
     import leaf2 from '$lib/assets/pictures/leaf2.svg';
@@ -24,7 +25,11 @@
 <!-- COMPONENT: ONS TEAM (MAIN)-->
 <OnsTeam titel="ONS TEAM" members={data.members} />
 
-<Animation_scribble />
+<!-- COMPONENT: FOOTER-->
+<Footer />
+
+<Animation_Scribble />
+
 
 <style>
 
@@ -141,19 +146,3 @@ header {
 }
 
 </style>
-
-<script>
-    import logo from '$lib/assets/pictures/logo.svg';
-    import leaf1 from '$lib/assets/pictures/leaf1.svg';
-    import leaf2 from '$lib/assets/pictures/leaf2.svg';
-
-    export let data;
-    import OnsTeam from "$lib/components/ons-team.svelte";
-
-    import Animation_scribble from "$lib/components/animation_scribble.svelte";
-</script>
-
-
-<!-- COMPONENT: FOOTER-->
-<Footer />
-
