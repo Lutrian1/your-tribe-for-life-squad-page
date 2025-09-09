@@ -22,25 +22,36 @@
 {/if}
 
 <style>
-.scribbleIn {
-  stroke: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 150vw;
-  height: 100vh;
-  overflow: clip;
-  z-index: 100;
-  pointer-events: none;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
-  animation: animation_scribbleIn 2s linear forwards;
+
+@media (prefers-reduced-motion: no-preference){
+  .scribbleIn {
+    display: none;
   }
-  
-  @keyframes animation_scribbleIn {
-    to {
-      stroke-dashoffset: 22306.443359375;
-      stroke-dasharray: 22306.443359375; /*Dit is het einde pad: https://codepen.io/Lutrian1/pen/xbweZRa?editors=1111 check me codepen hoe ik dit heb berekend*/
+}
+
+
+@media (prefers-reduced-motion: no-preference){
+  .scribbleIn {
+    display: block;
+    stroke: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150vw;
+    height: 100vh;
+    overflow: clip;
+    z-index: 100;
+    pointer-events: none;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    animation: animation_scribbleIn 2s linear forwards;
     }
+    
+    @keyframes animation_scribbleIn {
+      to {
+        stroke-dashoffset: 22306.443359375;
+        stroke-dasharray: 22306.443359375; /*Dit is het einde pad: https://codepen.io/Lutrian1/pen/xbweZRa?editors=1111 check me codepen hoe ik dit heb berekend*/
+      }
   }
+}
 </style>
