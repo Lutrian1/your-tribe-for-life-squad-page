@@ -7,6 +7,11 @@
     src: url($lib/assets/fonts/LondrinaSketch-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Papernotes';
+    src: url($lib/assets/fonts/Papernotes.ttf);
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -20,6 +25,7 @@ body {
 
     /* FONT TYPE */
     --main-font: 'Sketch', sans-serif;
+    --secondary-font: 'Papernotes', sans-serif;
 
     /* COLORS */
     --main-background-color: #F3E3D7;
@@ -31,6 +37,14 @@ body {
 
 h1{
     font-size: clamp(2.5em, 10vw, 6.5em);
+}
+
+p{
+    font-family: var(--secondary-font);
+}
+
+.importantP{
+    font-family: var(--main-font);
 }
 
 /*----------------------------------- BACKGROUND --------------------------------------*/

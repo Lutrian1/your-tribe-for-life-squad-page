@@ -54,6 +54,10 @@ main{
       justify-content: center;
     }
 }
+
+h2.title{
+  margin-top: 1vh;
+}
 /*----------------------------------- OUR TEAM --------------------------------------*/
   .ourTeam {
     margin: 0 auto;
