@@ -8,7 +8,7 @@
 
     import Header from "$lib/components/header.svelte";
     import Footer from "$lib/components/footer.svelte";
-    import OnsTeam from "$lib/components/ons-team.svelte";
+    import OnsTeam from "$lib/components/onsTeam.svelte";
 
 </script>
 
@@ -28,6 +28,7 @@
 <!-- COMPONENT: FOOTER-->
 <Footer />
 
+<!-- COMPONENT: ANIMATIE (GEBRUIK DEZE VOOR DE SCRIBBLE EFFECT TIJDENS HET OPENEN VAN EEN PAGINA)-->
 <Animation_Scribble />
 
 

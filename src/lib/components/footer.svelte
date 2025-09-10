@@ -18,7 +18,7 @@
                     stroke-dashoffset="1000"
                 />
             </svg>
-            <p>2E</p>
+            <p class="importantP">2E</p>
         </a>
 
         <a href="/groep-2F" class="classNavigation classNavigation2F">
@@ -32,7 +32,7 @@
                     stroke-dashoffset="1000"
                 />
             </svg>
-            <p>2F</p>
+            <p class="importantP">2F</p>
         </a>
     </nav>
 </footer>
@@ -64,10 +64,13 @@ footer{
 }
 
 .bekijkDeKlassenHeading{
-    margin-top: 12vh;
+    margin-top: 13vh;
     width: 99%;
     height: auto;
     max-width: 800px;
+    @media (min-width: 700px){
+         margin-top: 11vh;
+    }
 }
 
 .bekijkDeKlassenHeadingHidden{
