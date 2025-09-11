@@ -16,7 +16,7 @@
 
 <div class="squadNumberContainer">
     <h1 class="squadNumberActive">2F</h1>
-    <a href="/squad-2e"><h2 class="squadNumberInactive squadNumberSidebar">2E</h2></a>
+    <a href="/squad-2e"><h2 class="squadNumberInactive squadNumberBar">2E</h2></a>
 </div>
 
 <div class="card">
