@@ -151,14 +151,5 @@ header {
     import leaf2 from '$lib/assets/pictures/leaf2.svg';
 </script>
 
-<!-- <script>
-    let { data } = $props();
 
-    const members = data.members.data
-    console.log(data.members);
 
-</script>
-
-{#each members as member}
-    <a href="/{member.id}">{member.name} - {member.bio}</a>
-{/each} -->
