@@ -10,3 +10,4 @@ export async function load({ url }) {
   // Return hier dus de data (Dit is geen render)
   return { members: membersData.data };
 }
+
