@@ -67,6 +67,7 @@
 
     .card {
         position: relative;
+        overflow: clip;
     }
 
       .leafTwo, .leafOne, .leafThree {

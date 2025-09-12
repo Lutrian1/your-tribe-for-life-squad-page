@@ -13,7 +13,7 @@
 </script>
 
 
-<section class="mainContainer scroll_animation">
+<section class="mainContainer animation_scroll">
         
             <article class="membersData">
                 <div class="membersInfo">
@@ -167,11 +167,11 @@
     display: inline-block; 
     margin-left: 1rem;
     transition: transform 0.3s ease;
-    animation: shakeing 1.5s infinite; 
+    animation: animtion_shakeIng 1.5s infinite; 
     transform-origin: center; 
 }
 
-@keyframes shakeing {
+@keyframes animtion_shakeIng {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(10deg); }
     50% { transform: rotate(-10deg); }
@@ -214,8 +214,8 @@
 
 
 /* scroll animatie */
-.scroll_animation {
-    animation: cornerScroll 1s ease-out;
+.animation_scroll {
+    animation: animation_cornerScroll 1s ease-out;
 
      /* Dit is de naam van het element waarmee je aangeeft hoelang de scrool duurt. 
     je geeft de classname van dat element waardoor nu duidelijk is hoelang dit element is  */
@@ -231,7 +231,7 @@
     animation-range: entry 0% cover 25%;
 }
 
-@keyframes cornerScroll {
+@keyframes animation_cornerScroll {
     from {
         opacity: 0;
         transform: translateX(50vw) translateY(50vw);
