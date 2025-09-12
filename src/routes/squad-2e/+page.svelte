@@ -8,6 +8,7 @@
     import leaf1  from '$lib/assets/pictures/leaf1.svg';
     import leaf2  from '$lib/assets/pictures/leaf2.svg';
     import DetailHeader from "$lib/components/detailHeader.svelte";
+    import Animation_Scribble from '$lib/components/animation_scribble.svelte';
 
 </script>
 
@@ -39,6 +40,8 @@
     {/each}
 </div>
 
+<!-- COMPONENT: ANIMATIE (GEBRUIK DEZE VOOR DE SCRIBBLE EFFECT TIJDENS HET OPENEN VAN EEN PAGINA)-->
+<Animation_Scribble />
 
 
 <style>
@@ -81,7 +84,7 @@
             bottom: 0;
             right: 0;
             transform: rotate(90deg);
-            z-index: 1000;
+            z-index: 50;
             display: block;
             height: 20rem;
             width: 20rem;
@@ -93,7 +96,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            z-index: 1000;
+            z-index: 50;
             display: block;
             height: 20rem;
             width: 20rem;
@@ -106,7 +109,7 @@
             bottom: 30%;
             right: 10%;
             transform: rotate(90deg);
-            z-index: 1000;
+            z-index: 50;
             display: block;
             height: 20rem;
             width: 20rem;
