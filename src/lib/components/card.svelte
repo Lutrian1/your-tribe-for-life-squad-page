@@ -56,44 +56,6 @@
         overflow: hidden;
     }
 
-  
-.filterButton {
-    border: none;
-    border: 1px solid var(--main-text-color);
-    padding: 0.5rem;
-    border-radius: 20%;
-    font-family: var(--main-font);
-    background-color: var(--main-background-color);  
-    color: var(--main-text-color);
-    font-size: larger;  
-    cursor: pointer;
-}
-
-.filterButton:active {
-    background-color: var(--squad-number-sidebar-inactive);
-}
-
-.filterContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    background-color: var(--main-background-color);
-    padding: 0.5rem;
-}
-
-.backButton img, .logo {
-    height: 3rem;
-}
-
-/* main content */
-.squadNumberContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0rem 2rem 0rem ;
-}
-
 .mainContainer {
     display: grid;
     grid-template-columns: 1fr;

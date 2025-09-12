@@ -53,14 +53,11 @@
     justify-content: center;
 }
 
-.backButton img, .logo {
-    height: 3rem;
-}
-
 .filterContainer form {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
+
 </style>
