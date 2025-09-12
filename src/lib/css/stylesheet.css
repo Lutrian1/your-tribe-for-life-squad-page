@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -30,16 +30,17 @@ body {
     /* COLORS */
     --main-background-color: #F3E3D7;
     --main-text-color: #C91833;
+    --squad-number-sidebar-inactive: #c918327c;
 
 }
 
 /*----------------------------------- VARIABELEN VOOR ALLE KNOPPEN EN ANDERE ELEMENTEN --------------------------------------*/
 
-h1{
+h1 {
     font-size: clamp(2.5em, 10vw, 6.5em);
 }
 
-p{
+p,.filterButton{
     font-family: var(--secondary-font);
 }
 
@@ -49,7 +50,7 @@ p{
 
 /*----------------------------------- BACKGROUND --------------------------------------*/
 
-.background{
+.background {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -57,7 +58,7 @@ p{
     z-index: -1;
 }
 
-.leaf1{
+.leaf1 {
     position: absolute;
     top: 0;
     left: -10;
@@ -66,7 +67,7 @@ p{
     width: 30vw;
 }
 
-.leaf2{
+.leaf2 {
     position: absolute;
     top: 0;
     right: -10px;
@@ -75,7 +76,7 @@ p{
     width: 32vw;
 }
 
-.leaf3{
+.leaf3 {
     position: absolute;
     bottom: 0;
     left: -12px;
@@ -85,7 +86,7 @@ p{
     width: 29vw;
 }
 
-.leaf4{
+.leaf4 {
     position: absolute;
     bottom: 0;
     right: -20px;
