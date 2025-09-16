@@ -31,7 +31,7 @@
     font-family: var(--main-font);
     background-color: var(--main-background-color);  
     color: var(--main-text-color);
-    font-size: larger;  
+    font-size: clamp(0.6em, 2vw, 5em); ;  
     cursor: pointer;
 
     &:hover {

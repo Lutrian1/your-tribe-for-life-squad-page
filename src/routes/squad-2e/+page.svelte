@@ -1,8 +1,7 @@
 <script>
     let { data } = $props();
     const members = data.members;
-
-  const filter = data.filter;
+    const filter = data.filter;
 
     import Card from "$lib/components/card.svelte";
     import leaf1  from '$lib/assets/pictures/leaf1.svg';

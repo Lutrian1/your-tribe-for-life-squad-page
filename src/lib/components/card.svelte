@@ -9,6 +9,7 @@
     export let fav_emoji;
     export let fav_book_genre;
     export let fav_country
+    import Homebutton from "./Homebutton.svelte";
 
 </script>
 
@@ -36,6 +37,7 @@
                 </div>
 
                 <figure class="membersImageContainer">
+                    <Homebutton/>
                     <picture>
                         <source type="image/avif" srcset="https://fdnd.directus.app/assets/{mugshot}?format=avif&width=600&height=1000">
                         <source type="image/webp" srcset="https://fdnd.directus.app/assets/{mugshot}?format=webp&width=600&height=1000">
@@ -92,8 +94,15 @@
     gap: 1rem;
 }
 
-.membersImageContainer {
+.membersName {
+    font-size: clamp(1.5em, 6vw, 5em);
+}
 
+.membersDescription {
+    font-size: clamp(0.8em, 1.6vw, 2em)
+}
+
+.membersImageContainer {
    grid-column: 1 / 2;
     grid-row: 1;
 }
@@ -111,13 +120,13 @@
 
 .membersInfoDropDown summary {
     font-weight: bold;
-    font-size: 1.1rem;
+    /* font-size: 0.5rem; */
     cursor: pointer;
     list-style: none; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: clamp(1.3em, 2vw, 2em);
+    font-size: clamp(0.8em, 2vw, 2em);
 }
 
 .membersInfoDropDown summary::-webkit-details-marker {
@@ -149,7 +158,7 @@
 
 .membersInfoDropDown li {
     margin-bottom: 0.4rem;
-    font-size: clamp(1.3em, 2vw, 2em);
+    font-size: clamp(0.6em, 2vw, 2em);
 }
 
     .membersImageContainer {
