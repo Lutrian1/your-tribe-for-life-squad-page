@@ -87,6 +87,10 @@ En word hier gestyled:
 
 https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/87d8c380b3865fbd7e72512a202e1d2ecc72b8f9/src/lib/components/onsTeam.svelte#L104-L156
 
+## Team-afspraken:
+
+<img width="765" height="227" alt="image" src="https://github.com/user-attachments/assets/dc750ab3-610b-472d-8e0b-5db185d340fc" />
+
 ## Stappenplan om lokaal te testen / Installatie Info:
 
 Node.js controleren: Zorg ervoor dat Node.js op je computer is geïnstalleerd. Je controleert dit door node --version in je terminal of command prompt uit te voeren. Stel dit is niet geïnstalleerd, navigeer dan [hier](https://nodejs.org/en/download) naar toe.
