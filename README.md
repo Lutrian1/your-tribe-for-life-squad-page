@@ -23,7 +23,51 @@ Dit hebben wij onderverdeeld in componenten:
 1. Het volgt de kleuren van de herfst.
 2. Logo gemaakt uit ons team naam.
 3. Scribble feeling, met animaties die dit ondersteunen.
-4. Componenten gemaakt voor de pagina's, die we dan ook als componenten aanmaakte in ons project om zo het project eerlijk te verdelen, en goed in te schatten wie waar me bezig zal zijn en kan doen. De mappen vind je [hier](https://github.com/Lutrian1/your-tribe-for-life-squad-page/tree/main/src/lib/components), deze renderen we dan in de [homepage](https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/main/src/routes/%2Bpage.svelte).
+4. Carousel op 'Ons-Team'
+5. Componenten gemaakt voor de pagina's, die we dan ook als componenten aanmaakte in ons project om zo het project eerlijk te verdelen, en goed in te schatten wie waar me bezig zal zijn en kan doen. De mappen vind je [hier](https://github.com/Lutrian1/your-tribe-for-life-squad-page/tree/main/src/lib/components), deze renderen we dan in de [homepage](https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/main/src/routes/%2Bpage.svelte).
+
+### DESIGN:
+
+<img width="1865" height="908" alt="image" src="https://github.com/user-attachments/assets/9f89cb23-f02c-45e0-be68-bad3d5b24fd2" />
+<img width="1827" height="666" alt="image" src="https://github.com/user-attachments/assets/b29ab0a3-b1ef-4048-b276-5d6f31865d1b" />
+<img width="1867" height="911" alt="image" src="https://github.com/user-attachments/assets/f69a95b4-7662-4587-916f-c5029be79c48" />
+
+### ANIMATIES:
+
+1. Scribble die de pagina onthult.
+2. Bladeren die bewegen tijdens scrollen
+3. Hover op de klassen navigatie die toont dat je naar een andere pagina gaat.
+4. Zijwaartse slide-in op squadpage kaarten.
+
+https://github.com/user-attachments/assets/9c7362bb-b54d-4a78-af47-ec0f3b99f920
+
+## Aantal Extra Kenmerken
+
+### 404:
+
+Wanneer je een niet kloppende link intypt ga je naar de 404 pagina:
+
+<img width="1873" height="905" alt="image" src="https://github.com/user-attachments/assets/ae466c06-f586-4a9c-9d2f-55c077698c66" />
+
+Deze pagina staat in een [slug] map die [hier](https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/main/src/routes/blog/%5Bslug%5D/%2Bpage.server.js#L1-L14) te vinden is, sveltekit zelf voert foutmeldingen af. Echter om een custom pagina te renderen tijdens een van deze fout meldingen, zijn extra stappen voor nodig. Een beschrijving hierover staat [hier](https://svelte.dev/docs/kit/errors), deze documentatie is van sveltekit zelf, en is ook toegepast in het project. De 404 pagina staat [hier](https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/main/src/routes/%2Berror.svelte), deze moet +error genoemd worden, om zo de pagina te renderen bij een foutmelding.
+
+### Componenten:
+
+Onze pagina is onder verdeeld in componenten. Deze componenten renderen we in onze homepage:
+
+https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/5ac339019755157dc5fcafe996caaa576c4e1873/src/routes/%2Bpage.svelte#L1C1-L32C23
+
+### DATA Renderen:
+
+Voor elke losse pagina word een een page-server.js aangemaakt met hierin een API Call:
+
+https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/5ac339019755157dc5fcafe996caaa576c4e1873/src/routes/squad-2f/%2Bpage.server.js#L11-L33
+
+Hierin vind je ook een filter script, dit script zorgt ervoor dat je kan filteren op ochtend en avond mensen. Om dit kort uit te leggen: Als de persoon een avond mens is, veranderd de filter API naar enkel personen die een avond mens zijn.
+
+Deze data renderen we dan weer in een losse +page.svelte die de data afhandeld en verwerkt in een each loop:
+
+https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/5ac339019755157dc5fcafe996caaa576c4e1873/src/routes/squad-2f/%2Bpage.svelte#L1-L41
 
 ## Stappenplan om lokaal te testen / Installatie Info:
 
