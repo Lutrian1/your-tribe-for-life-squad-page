@@ -69,6 +69,24 @@ Deze data renderen we dan weer in een losse +page.svelte die de data afhandeld e
 
 https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/5ac339019755157dc5fcafe996caaa576c4e1873/src/routes/squad-2f/%2Bpage.svelte#L1-L41
 
+### Ons-Team Carousel:
+
+Op een telefoon scherm, toont de pagina ons-team als carousel:
+
+<img width="457" height="338" alt="image" src="https://github.com/user-attachments/assets/0571b6eb-624d-4a75-8f0b-afef2e81f2d4" />
+
+Bij grotere schermen is dit echter niet meer nodig, omdat er meer ruimte is:
+
+<img width="1470" height="364" alt="image" src="https://github.com/user-attachments/assets/c4d252ed-2398-47e4-b40a-f0a2f64066c1" />
+
+Het carousel is hier te vinden als los component:
+
+https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/main/src/lib/components/onsTeam.svelte
+
+En word hier gestyled:
+
+https://github.com/Lutrian1/your-tribe-for-life-squad-page/blob/87d8c380b3865fbd7e72512a202e1d2ecc72b8f9/src/lib/components/onsTeam.svelte#L104-L156
+
 ## Stappenplan om lokaal te testen / Installatie Info:
 
 Node.js controleren: Zorg ervoor dat Node.js op je computer is geïnstalleerd. Je controleert dit door node --version in je terminal of command prompt uit te voeren. Stel dit is niet geïnstalleerd, navigeer dan [hier](https://nodejs.org/en/download) naar toe.
