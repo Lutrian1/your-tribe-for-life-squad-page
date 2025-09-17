@@ -11,4 +11,6 @@ export async function load({ params }) {
 	}
 
 	return { post };
-}
+} 
+
+/* Aangemaakt uit: https://svelte.dev/docs/kit/errors*/

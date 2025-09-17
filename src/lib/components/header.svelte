@@ -8,6 +8,7 @@
 <header>
 
     <div class="headerContainer">
+        
         <article class="headerColumn1">
             <p>Wat is FDND? Bij de Ad Frontend Design & Development (FDND) doe je alles met code, en designen.
             De opleiding duurt 2 jaar waarin je van alles leert om je zo'n goed mogelijke front-ender te maken
@@ -26,6 +27,7 @@
             Dit keer met Sveltekit. Een nieuw framework waar wij deze sprint mee werken. De site is hier ook mee gemaakt,
             en de data is dynamisch gerendered. </p>
         </article>
+
     </div>
 
 </header>

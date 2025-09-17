@@ -8,15 +8,20 @@
 </script>
 
 <main>
+
   <section class="ourTeam">
+
     <img src="{scribble}" alt="" class="scribble1">
     <h2 class="title">{titel}</h2>
+
     <div
-      class="carousel carousel--scroll-buttons carousel--scroll-markers carousel--inert"
+      class="carousel carouselScrollButtons"
     >
       <!-- For each met een loop index -->
       {#each members as member, i}
-        <li class="ourTeamCard carousel__slide" data-label="Slide {i + 1} animation_eraseOut" >
+
+        <li class="ourTeamCard" data-label="Slide {i + 1} animation_eraseOut" >
+          
           <img src="{scribble}" alt="" class="scribble2">
           <a href={member.website}>
             <picture>
@@ -35,16 +40,24 @@
               />
             </picture></a
           >
+
           <div class="memberInfo">
+
             <h3>{member.name}</h3>
             <p class="memberDescription">
               Bio: lorem ipsum lorem ipsum {member.bio}
             </p>
+            
           </div>
+
         </li>
+
       {/each}
+
     </div>
+
   </section>
+
 </main>
 
 <style>
@@ -115,7 +128,7 @@ h2.title{
     scroll-marker-group: after;
   }
 
-  .carousel--scroll-buttons {
+  .carouselScrollButtons {
     &::scroll-button(*) {
       position: fixed;
       position-anchor: --carousel;
@@ -152,6 +165,7 @@ h2.title{
   ::-webkit-scrollbar {
     width: 0; /* Verwijder scrollbar */
   }
+/* BELANGRIJKE LINKS VOOR BOVENSTAANDE CODE: ANCHOR: https://ishadeed.com/article/anchor-positioning/*/
 
 /*----------------------------------- OUR TEAM CARD --------------------------------------*/
   .ourTeamCard {

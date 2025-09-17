@@ -17,6 +17,7 @@
 <section class="mainContainer animation_scroll">
         
             <article class="membersData">
+
                 <div class="membersInfo">
                     <h1 class="membersName">{name}</h1>
 
@@ -44,6 +45,7 @@
                         <img class="mugshotImage" src="https://fdnd.directus.app/assets/{mugshot}" loading="lazy" alt="{name}" width="400">
                     </picture>
                 </figure>
+                
             </article>
 
         </section>
