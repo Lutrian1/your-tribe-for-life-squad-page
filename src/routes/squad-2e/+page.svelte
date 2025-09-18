@@ -3,11 +3,11 @@
     const members = data.members;
     const filter = data.filter;
 
-    import Card from "$lib/components/card.svelte";
+    import Card from "$lib/components/Card.svelte";
     import leaf1  from '$lib/assets/pictures/leaf1.svg';
     import leaf2  from '$lib/assets/pictures/leaf2.svg';
-    import DetailHeader from "$lib/components/detailHeader.svelte";
-    import Animation_Scribble from '$lib/components/animation_scribble.svelte';
+    import DetailHeader from "$lib/components/DetailHeader.svelte";
+    import Animation_Scribble from '$lib/components/Animation_scribble.svelte';
 
 </script>
 
