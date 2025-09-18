@@ -19,7 +19,7 @@
             <article class="membersData">
 
                 <div class="membersInfo">
-                    <h1 class="membersName">{name}</h1>
+                    <h2 class="membersName">{name}</h2>
 
                     <p class="membersDescription">{bio || "Hey, Ik houdt van coderen en het maken van leuke creative dingen op het web 😃 🥳"}</p>
 
