@@ -14,7 +14,7 @@
     <img src="{scribble}" alt="" class="scribble1">
     <h2 class="title">{titel}</h2>
 
-    <div
+    <ul
       class="carousel carouselScrollButtons"
     >
       <!-- For each met een loop index -->
@@ -54,7 +54,7 @@
 
       {/each}
 
-    </div>
+    </ul>
 
   </section>
 

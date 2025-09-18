@@ -14,7 +14,7 @@
 </script>
 
 
-<section class="mainContainer animation_scroll">
+<div class="mainContainer animation_scroll">
         
             <article class="membersData">
 
@@ -48,7 +48,7 @@
                 
             </article>
 
-        </section>
+        </div>
 
 
 
