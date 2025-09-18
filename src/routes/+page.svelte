@@ -1,14 +1,14 @@
 <script>
-    import Animation_Scribble from '$lib/components/animation_scribble.svelte';
+    import Animation_Scribble from '$lib/components/Animation_scribble.svelte';
 
     import leaf1 from '$lib/assets/pictures/leaf1.svg';
     import leaf2 from '$lib/assets/pictures/leaf2.svg';
 
     export let data
 
-    import Header from "$lib/components/header.svelte";
-    import Footer from "$lib/components/footer.svelte";
-    import OnsTeam from "$lib/components/onsTeam.svelte";
+    import Header from "$lib/components/Header.svelte";
+    import Footer from "$lib/components/Footer.svelte";
+    import OnsTeam from "$lib/components/OnsTeam.svelte";
 
 </script>
 
