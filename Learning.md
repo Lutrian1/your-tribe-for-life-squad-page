@@ -2,9 +2,9 @@
 
 **Teamvragen ronde**
 
-**Hoe ging de samenwerking:**
-
 ---------------------------
+
+**Hoe ging de samenwerking:**
 
 Luuk:
 Ik vond de samenwerking enorm prettig. We maakte afspraken die we eigenlijk allemaal nakwamen, en er is vaak gecommuniceerd via teams hoe we ervoor stonden. Als we thuis verder werkte. We maakte afspraken om zo vaak mogelijk bij de les te komen, wat we ook deden, en zijn in de eerste week ook elke dag om 12 op school geweest, omdat het dan makkelijker samenwerken was.
@@ -65,6 +65,26 @@ We hebben gebruik gemaakt van alle code conventies en hebben ook gebruik gemaakt
 **Geef feedback aan teamleden**
 
 Luuk:
+
+Hoe heb je mij als teamlid ervaren:
+
+Ravi: Ravi was hardwerkend en stopte niet met een taak desondanks dit buiten zijn comfort-zone viel. Hij heeft uiteindelijk een goede bijdrage geleverd aan het project, en kwam ze afspraken na.
+
+Saif: Saif gaf vaak een goeie tegen mening, die nodig was om de juiste keuzes te maken. Hij kon goed luisteren en leverde zijn taak goed op en volgens de juiste code principes. Zijn code was ook heel net en leesbaar.
+
+Welke tips heb je voor mij:
+
+Ravi: Probeer jezelf iets met te betrekken als het gaat om keuzes maken, soms was je wat stilletjes en het snel ergens mee eens.
+
+Saif: Soms onderschatte Saif een beetje de moeilijkheid van het werk dat hij wou gaan doen. Hij leerde snel, alleen bij moeilijk heden wou hij toch doorgaan met zijn taak, zonder mis wat anders op te pakken en later terug te komen.
+
+Wat zou ik moeten veranderen om prettiger samen te werken:
+
+Qua samenwerking ben ik enorm tevreden, de boven staande punten bescrhijven al wat verbeterd kan worden, maar dat zijn kleine punten.
+
+Waar ben je trots op?
+
+Het design, en de animaties die wij hebben verwerkt in de site.
 
 ---------------------------
 
